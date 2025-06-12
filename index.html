@@ -6,29 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Website - Home</title>
     <style>
-        /* Reset default margin/padding */
+        /* Global reset and body styling */
         body, h1, h2, p {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        /* Global styling for body */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
-            padding: 0;
-            box-sizing: border-box;
         }
 
-        /* Soft pastel header */
+        /* Header Styling */
         header {
             background-color: #FFB6B9;  /* Soft pink */
             text-align: center;
             padding: 20px 0;
             color: white;
-            border-bottom: 5px solid #FF677D;  /* Slightly darker pink border */
+            border-bottom: 5px solid #FF677D;
         }
 
         header h1 {
@@ -40,42 +38,42 @@
         header p {
             font-size: 1rem;
             font-weight: 200;
-            color: #fff;
         }
 
-        /* Container for 3 sections */
-        .container {
+        /* Main Content Layout */
+        .main-container {
             display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            gap: 20px;
+            justify-content: space-between;
             margin-top: 30px;
+            padding: 0 20px;
+            gap: 20px;
         }
 
-        /* Style for each section */
+        /* Each vertical section */
         .section {
             width: 30%;
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .section:hover {
-            transform: scale(1.05);
         }
 
         .section h2 {
             font-size: 1.5rem;
-            color: #FF677D;  /* Matching header pink */
+            color: #FF677D;
             text-align: center;
             margin-bottom: 10px;
         }
 
-        /* Styling for each post */
+        /* Horizontal layout inside each section */
+        .post-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
         .post {
-            margin-bottom: 15px;
+            width: 32%; /* Equal width for each post */
             padding: 10px;
             background-color: #f8f8f8;
             border-radius: 8px;
@@ -118,61 +116,67 @@
         <p>Book Reviews, Blog Posts, and Short Writings</p>
     </header>
 
-    <div class="container">
+    <div class="main-container">
         <!-- Book Reviews Section -->
         <div class="section">
             <h2>Book Reviews</h2>
-            <div class="post">
-                <a href="book-reviews.html#review1">The Great Gatsby</a>
-                <p>A review of the timeless classic by F. Scott Fitzgerald.</p>
-            </div>
-            <div class="post">
-                <a href="book-reviews.html#review2">1984</a>
-                <p>A critical look at George Orwell's dystopian masterpiece.</p>
-            </div>
-            <div class="post">
-                <a href="book-reviews.html#review3">To Kill a Mockingbird</a>
-                <p>An analysis of the beloved novel by Harper Lee.</p>
+            <div class="post-container">
+                <div class="post">
+                    <a href="book-reviews.html#review1">The Great Gatsby</a>
+                    <p>A review of the timeless classic by F. Scott Fitzgerald.</p>
+                </div>
+                <div class="post">
+                    <a href="book-reviews.html#review2">1984</a>
+                    <p>A critical look at George Orwell's dystopian masterpiece.</p>
+                </div>
+                <div class="post">
+                    <a href="book-reviews.html#review3">To Kill a Mockingbird</a>
+                    <p>An analysis of the beloved novel by Harper Lee.</p>
+                </div>
             </div>
         </div>
 
-        <!-- Random Blog Posts Section -->
+        <!-- Blog Posts Section -->
         <div class="section">
             <h2>Blog Posts</h2>
-            <div class="post">
-                <a href="blog.html#post1">The Art of Mindful Living</a>
-                <p>Exploring the beauty of mindfulness in our everyday life.</p>
-            </div>
-            <div class="post">
-                <a href="blog.html#post2">My Creative Journey</a>
-                <p>A peek into how I find inspiration for my writing.</p>
-            </div>
-            <div class="post">
-                <a href="blog.html#post3">A Day in Nature</a>
-                <p>How a walk in the park can clear your mind.</p>
+            <div class="post-container">
+                <div class="post">
+                    <a href="blog.html#post1">The Art of Mindful Living</a>
+                    <p>Exploring the beauty of mindfulness in our everyday life.</p>
+                </div>
+                <div class="post">
+                    <a href="blog.html#post2">My Creative Journey</a>
+                    <p>A peek into how I find inspiration for my writing.</p>
+                </div>
+                <div class="post">
+                    <a href="blog.html#post3">A Day in Nature</a>
+                    <p>How a walk in the park can clear your mind.</p>
+                </div>
             </div>
         </div>
 
         <!-- Short Writings Section -->
         <div class="section">
             <h2>Short Writings</h2>
-            <div class="post">
-                <a href="short-writings.html#writing1">A Whisper of Spring</a>
-                <p>A short poem about the first signs of spring.</p>
-            </div>
-            <div class="post">
-                <a href="short-writings.html#writing2">The Lost Letter</a>
-                <p>A brief fictional story of a forgotten letter.</p>
-            </div>
-            <div class="post">
-                <a href="short-writings.html#writing3">The Silver Key</a>
-                <p>A mysterious short story about a hidden treasure.</p>
+            <div class="post-container">
+                <div class="post">
+                    <a href="short-writings.html#writing1">A Whisper of Spring</a>
+                    <p>A short poem about the first signs of spring.</p>
+                </div>
+                <div class="post">
+                    <a href="short-writings.html#writing2">The Lost Letter</a>
+                    <p>A brief fictional story of a forgotten letter.</p>
+                </div>
+                <div class="post">
+                    <a href="short-writings.html#writing3">The Silver Key</a>
+                    <p>A mysterious short story about a hidden treasure.</p>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>Created with 💖 by Your Sarrow</p>
+        <p>Created with 💖 by Your Name</p>
     </footer>
 
 </body>
