@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sarrow - Home</title>
+    <title>Your Website - Home</title>
     <style>
         /* Global reset and body styling */
         body, h1, h2, p {
@@ -43,15 +43,16 @@
         /* Main Content Layout */
         .main-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;  /* Stack sections vertically */
+            align-items: center;     /* Center all sections */
+            gap: 30px;               /* Space between sections */
             margin-top: 30px;
             padding: 0 20px;
-            gap: 20px;
         }
 
         /* Each vertical section */
         .section {
-            width: 30%;
+            width: 80%;
             background-color: #fff;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -68,12 +69,12 @@
         /* Horizontal layout inside each section */
         .post-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between;  /* Space posts equally */
             gap: 15px;
         }
 
         .post {
-            width: 32%; /* Equal width for each post */
+            width: 32%;  /* Ensure three posts fit horizontally */
             padding: 10px;
             background-color: #f8f8f8;
             border-radius: 8px;
@@ -136,25 +137,6 @@
             </div>
         </div>
 
-        <!-- Blog Posts Section -->
-        <div class="section">
-            <h2>Blog Posts</h2>
-            <div class="post-container">
-                <div class="post">
-                    <a href="blog.html#post1">The Art of Mindful Living</a>
-                    <p>Exploring the beauty of mindfulness in our everyday life.</p>
-                </div>
-                <div class="post">
-                    <a href="blog.html#post2">My Creative Journey</a>
-                    <p>A peek into how I find inspiration for my writing.</p>
-                </div>
-                <div class="post">
-                    <a href="blog.html#post3">A Day in Nature</a>
-                    <p>How a walk in the park can clear your mind.</p>
-                </div>
-            </div>
-        </div>
-
         <!-- Short Writings Section -->
         <div class="section">
             <h2>Short Writings</h2>
@@ -173,10 +155,29 @@
                 </div>
             </div>
         </div>
+
+        <!-- Blog Posts Section -->
+        <div class="section">
+            <h2>Blog Posts</h2>
+            <div class="post-container">
+                <div class="post">
+                    <a href="blog.html#post1">The Art of Mindful Living</a>
+                    <p>Exploring the beauty of mindfulness in our everyday life.</p>
+                </div>
+                <div class="post">
+                    <a href="blog.html#post2">My Creative Journey</a>
+                    <p>A peek into how I find inspiration for my writing.</p>
+                </div>
+                <div class="post">
+                    <a href="blog.html#post3">A Day in Nature</a>
+                    <p>How a walk in the park can clear your mind.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <p>Created with 💖 by Your Sarrow</p>
+        <p>Created with 💖 by Your Name</p>
     </footer>
 
 </body>
